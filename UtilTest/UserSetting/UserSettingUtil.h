@@ -7,12 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSString+Validate.h"
 
 /*!
- iStickyのユーザ情報を取得するためのクラス(ライブラリ)。
- UserDefaultsへのアクセサ(getter)として用いる。
- UserDefaultsに保存するもので、かつ色んなところから参照する可能性があるものが加わったら、
- 適宜getterを追加していって下さい。
+ This class supports manage user name/password secure.
+ Also this class provides wrap set/get of NSUserDefaults (text/number/object).
  */
 
 @interface UserSettingUtil : NSObject {
@@ -26,13 +25,12 @@
 + (void) setIntegerWithKey:(NSString*)key value:(int)value;
 /*! 任意のキーの値(NSObject系)を取得する */
 + (NSObject*) getObjectWithKey:(NSString*)key;
++ (void) setObjectWithKey:(NSString*)key object:(NSObject*)object;
 /*! ユーザ名の取得 */
-+ (NSString*) getUserName;
++ (NSString*) getUserName:(NSString*)serviceName;
++ (void) setUserName:(NSString*)userName service:(NSString*)serviceName;
 /*! ユーザパスワードの取得 */
-+ (NSString*) getUserPassword;
-/*! Realationサーバアドレスの取得 */
-+ (NSString*) getRealationServerAddress;
++ (NSString*) getUserPassword:(NSString*)serviceName;
++ (NSError*) setUserPassword:(NSString*)password service:(NSString*)serviceName;
 
-+ (int) getBackgroundGeoInfoState;
-+ (void) setBackgroundGeoInfoState:(int)state;
 @end

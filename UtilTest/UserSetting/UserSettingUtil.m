@@ -20,6 +20,7 @@
 + (void) setStringWithKey:(NSString*)key value:(NSString*)value
 {
     [[NSUserDefaults standardUserDefaults] setObject:value forKey:key];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 + (int) getIntegerWithKey:(NSString*)key
@@ -30,6 +31,7 @@
 + (void) setIntegerWithKey:(NSString*)key value:(int)value
 {
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:value] forKey:key];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 + (NSObject*) getObjectWithKey:(NSString*)key
@@ -37,30 +39,58 @@
      return [[NSUserDefaults standardUserDefaults] objectForKey:key];
 }
 
-+ (NSString*) getUserName
++ (void) setObjectWithKey:(NSString*)key object:(NSObject*)object
 {
-    return [[NSUserDefaults standardUserDefaults] stringForKey:@"USERNAME"];
+    [[NSUserDefaults standardUserDefaults] setObject:object forKey:key];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-+ (NSString*) getUserPassword
++ (NSString*) getUserName:(NSString*)serviceName
+{
+    return [[NSUserDefaults standardUserDefaults] stringForKey:[NSString stringWithFormat:@"%@_USERNAME",serviceName]];
+}
+
++ (void) setUserName:(NSString *)userName service:(NSString *)serviceName
+{
+    //delete password for old user name
+    NSError *error;
+    NSString *oldUserName = [UserSettingUtil getUserName:serviceName];
+    if(oldUserName != nil && ![oldUserName isEqualToString:userName]) {
+        [SFHFKeychainUtils deleteItemForUsername:oldUserName andServiceName:serviceName error:&error];
+    }
+    
+    [UserSettingUtil setStringWithKey:[NSString stringWithFormat:@"%@_USERNAME",serviceName] value:userName];
+}
+
++ (NSString*) getUserPassword:(NSString*)serviceName
+{
+    NSString* userName = [UserSettingUtil getUserName:serviceName];
+    if(userName == nil) {
+        return nil;
+    }
+    
+    NSError *error;
+    return [SFHFKeychainUtils getPasswordForUsername:userName andServiceName:serviceName error:&error];
+}
+
++ (NSError*) setUserPassword:(NSString*)password service:(NSString*)serviceName
+{
+    NSString* userName = [UserSettingUtil getUserName:serviceName];
+    if([userName isEmpty]) {
+        return nil;
+    }
+    
+    NSError *error;
+    [SFHFKeychainUtils storeUsername:userName andPassword:password forServiceName:serviceName updateExisting:YES error:&error];
+    
+    return error;
+}
+
+- (NSError*) deleteUserPassword:(NSString *)serviceName
 {
     NSError *error;
-    return [SFHFKeychainUtils getPasswordForUsername:[[NSUserDefaults standardUserDefaults] objectForKey:@"USERNAME"] andServiceName:@"Realation" error:&error];
-}
-
-+ (NSString*) getRealationServerAddress
-{
-    return @"http://tm-1031.sakura.ne.jp/realation/";// [[NSUserDefaults standardUserDefaults] stringForKey:@"imageServer_address"];
-}
-
-+ (int) getBackgroundGeoInfoState
-{
-    return [[NSUserDefaults standardUserDefaults] integerForKey:@"GEOINFOSTATE"];
-}
-
-+ (void) setBackgroundGeoInfoState:(int)state
-{
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:state] forKey:@"GEOINFOSTATE"];
+    [SFHFKeychainUtils deleteItemForUsername:[UserSettingUtil getUserName:serviceName] andServiceName:serviceName error:&error];
+    return error;
 }
 
 

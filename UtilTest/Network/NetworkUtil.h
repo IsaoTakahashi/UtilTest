@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "UserSettingUtil.h"
+#import "R9HTTPRequest.h"
 #import "Base64Util.h"
 
 enum DATA_TYPE{ASCII,BINARY,JPG};
@@ -17,15 +18,6 @@ enum DATA_TYPE{ASCII,BINARY,JPG};
 
 + (NetworkUtil*) getInstance;
 
-
-//urlにGETリクエストを飛ばして結果を返すメソッド
-+ (NSData*)sendGetRequest:(NSString*)uri;
-
-//(Sync)urlにBasic認証を使ったGETリクエストを飛ばして結果を返すメソッド
-+ (NSData*)sendGetRequestBasicAuth:(NSString *)uri;
-
-//(Async)urlにBasic認証を使ったGETリクエストを飛ばして結果を返すメソッド
-+ (void)sendGetAsyncRequestBasicAuth:(NSString *)uri;
 
 @end
 

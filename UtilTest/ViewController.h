@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserSetting/UserSettingUtil.h"
 
 @interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *userField;
+@property (weak, nonatomic) IBOutlet UITextField *passField;
+- (IBAction)inputUserName:(id)sender;
+- (IBAction)inputPassword:(id)sender;
 
 @end

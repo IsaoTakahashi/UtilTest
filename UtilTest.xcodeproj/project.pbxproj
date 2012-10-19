@@ -20,11 +20,18 @@
 		4DA197161631882D002FDA09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA196F71631882D002FDA09 /* Foundation.framework */; };
 		4DA1971E1631882D002FDA09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DA1971C1631882D002FDA09 /* InfoPlist.strings */; };
 		4DA197211631882D002FDA09 /* UtilTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA197201631882D002FDA09 /* UtilTestTests.m */; };
-		4DA1972D163188C0002FDA09 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1972C163188C0002FDA09 /* Network.m */; };
 		4DA19730163188E4002FDA09 /* NetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1972F163188E4002FDA09 /* NetworkUtil.m */; };
 		4DA1973316318A45002FDA09 /* Base64Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1973216318A45002FDA09 /* Base64Util.m */; };
-		4DA1973D16318C83002FDA09 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1973A16318C83002FDA09 /* SFHFKeychainUtils.m */; };
 		4DA1973E16318C83002FDA09 /* UserSettingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1973C16318C83002FDA09 /* UserSettingUtil.m */; };
+		4DA19749163199F3002FDA09 /* BSD-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4DA19741163199F3002FDA09 /* BSD-LICENSE */; };
+		4DA1974A163199F3002FDA09 /* R9AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA19743163199F3002FDA09 /* R9AppDelegate.m */; };
+		4DA1974B163199F3002FDA09 /* R9HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA19745163199F3002FDA09 /* R9HTTPRequest.m */; };
+		4DA1974C163199F3002FDA09 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA19748163199F3002FDA09 /* SFHFKeychainUtils.m */; };
+		4DA1974E16319C54002FDA09 /* MIT-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4DA1974D16319C54002FDA09 /* MIT-LICENSE */; };
+		4DA197501631A5DC002FDA09 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA1974F1631A5DC002FDA09 /* SystemConfiguration.framework */; };
+		4DA197521631A60C002FDA09 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA197511631A60C002FDA09 /* Security.framework */; };
+		4DA197541631A632002FDA09 /* ReadMe in Resources */ = {isa = PBXBuildFile; fileRef = 4DA197531631A632002FDA09 /* ReadMe */; };
+		4DA197581631AEFA002FDA09 /* NSString+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA197571631AEFA002FDA09 /* NSString+Validate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,16 +64,25 @@
 		4DA1971D1631882D002FDA09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4DA1971F1631882D002FDA09 /* UtilTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilTestTests.h; sourceTree = "<group>"; };
 		4DA197201631882D002FDA09 /* UtilTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UtilTestTests.m; sourceTree = "<group>"; };
-		4DA1972B163188C0002FDA09 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
-		4DA1972C163188C0002FDA09 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
 		4DA1972E163188E4002FDA09 /* NetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkUtil.h; sourceTree = "<group>"; };
 		4DA1972F163188E4002FDA09 /* NetworkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkUtil.m; sourceTree = "<group>"; };
 		4DA1973116318A45002FDA09 /* Base64Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Util.h; sourceTree = "<group>"; };
 		4DA1973216318A45002FDA09 /* Base64Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Util.m; sourceTree = "<group>"; };
-		4DA1973916318C83002FDA09 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
-		4DA1973A16318C83002FDA09 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
 		4DA1973B16318C83002FDA09 /* UserSettingUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingUtil.h; sourceTree = "<group>"; };
 		4DA1973C16318C83002FDA09 /* UserSettingUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingUtil.m; sourceTree = "<group>"; };
+		4DA19741163199F3002FDA09 /* BSD-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "BSD-LICENSE"; sourceTree = "<group>"; };
+		4DA19742163199F3002FDA09 /* R9AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = R9AppDelegate.h; sourceTree = "<group>"; };
+		4DA19743163199F3002FDA09 /* R9AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = R9AppDelegate.m; sourceTree = "<group>"; };
+		4DA19744163199F3002FDA09 /* R9HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = R9HTTPRequest.h; sourceTree = "<group>"; };
+		4DA19745163199F3002FDA09 /* R9HTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = R9HTTPRequest.m; sourceTree = "<group>"; };
+		4DA19747163199F3002FDA09 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		4DA19748163199F3002FDA09 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		4DA1974D16319C54002FDA09 /* MIT-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MIT-LICENSE"; sourceTree = "<group>"; };
+		4DA1974F1631A5DC002FDA09 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4DA197511631A60C002FDA09 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4DA197531631A632002FDA09 /* ReadMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe; sourceTree = "<group>"; };
+		4DA197561631AEFA002FDA09 /* NSString+Validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validate.h"; sourceTree = "<group>"; };
+		4DA197571631AEFA002FDA09 /* NSString+Validate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA197521631A60C002FDA09 /* Security.framework in Frameworks */,
+				4DA197501631A5DC002FDA09 /* SystemConfiguration.framework in Frameworks */,
 				4DA196F61631882D002FDA09 /* UIKit.framework in Frameworks */,
 				4DA196F81631882D002FDA09 /* Foundation.framework in Frameworks */,
 				4DA196FA1631882D002FDA09 /* CoreGraphics.framework in Frameworks */,
@@ -96,6 +114,8 @@
 		4DA196E61631882D002FDA09 = {
 			isa = PBXGroup;
 			children = (
+				4DA197511631A60C002FDA09 /* Security.framework */,
+				4DA1974F1631A5DC002FDA09 /* SystemConfiguration.framework */,
 				4DA196FB1631882D002FDA09 /* UtilTest */,
 				4DA197191631882D002FDA09 /* UtilTestTests */,
 				4DA196F41631882D002FDA09 /* Frameworks */,
@@ -126,6 +146,8 @@
 		4DA196FB1631882D002FDA09 /* UtilTest */ = {
 			isa = PBXGroup;
 			children = (
+				4DA197551631AED3002FDA09 /* Category */,
+				4DA1973F163199F3002FDA09 /* Library */,
 				4DA1973816318C83002FDA09 /* UserSetting */,
 				4DA1972A163188C0002FDA09 /* Network */,
 				4DA197041631882D002FDA09 /* AppDelegate.h */,
@@ -171,8 +193,6 @@
 		4DA1972A163188C0002FDA09 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				4DA1972B163188C0002FDA09 /* Network.h */,
-				4DA1972C163188C0002FDA09 /* Network.m */,
 				4DA1972E163188E4002FDA09 /* NetworkUtil.h */,
 				4DA1972F163188E4002FDA09 /* NetworkUtil.m */,
 				4DA1973116318A45002FDA09 /* Base64Util.h */,
@@ -184,12 +204,51 @@
 		4DA1973816318C83002FDA09 /* UserSetting */ = {
 			isa = PBXGroup;
 			children = (
-				4DA1973916318C83002FDA09 /* SFHFKeychainUtils.h */,
-				4DA1973A16318C83002FDA09 /* SFHFKeychainUtils.m */,
 				4DA1973B16318C83002FDA09 /* UserSettingUtil.h */,
 				4DA1973C16318C83002FDA09 /* UserSettingUtil.m */,
 			);
 			path = UserSetting;
+			sourceTree = "<group>";
+		};
+		4DA1973F163199F3002FDA09 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4DA19740163199F3002FDA09 /* R9HTTPRequest */,
+				4DA19746163199F3002FDA09 /* SFHFKeychainUtils */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		4DA19740163199F3002FDA09 /* R9HTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				4DA19741163199F3002FDA09 /* BSD-LICENSE */,
+				4DA19742163199F3002FDA09 /* R9AppDelegate.h */,
+				4DA19743163199F3002FDA09 /* R9AppDelegate.m */,
+				4DA19744163199F3002FDA09 /* R9HTTPRequest.h */,
+				4DA19745163199F3002FDA09 /* R9HTTPRequest.m */,
+			);
+			path = R9HTTPRequest;
+			sourceTree = "<group>";
+		};
+		4DA19746163199F3002FDA09 /* SFHFKeychainUtils */ = {
+			isa = PBXGroup;
+			children = (
+				4DA19747163199F3002FDA09 /* SFHFKeychainUtils.h */,
+				4DA19748163199F3002FDA09 /* SFHFKeychainUtils.m */,
+				4DA1974D16319C54002FDA09 /* MIT-LICENSE */,
+				4DA197531631A632002FDA09 /* ReadMe */,
+			);
+			path = SFHFKeychainUtils;
+			sourceTree = "<group>";
+		};
+		4DA197551631AED3002FDA09 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4DA197561631AEFA002FDA09 /* NSString+Validate.h */,
+				4DA197571631AEFA002FDA09 /* NSString+Validate.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +324,9 @@
 			files = (
 				4DA197001631882D002FDA09 /* InfoPlist.strings in Resources */,
 				4DA197091631882D002FDA09 /* MainStoryboard.storyboard in Resources */,
+				4DA19749163199F3002FDA09 /* BSD-LICENSE in Resources */,
+				4DA1974E16319C54002FDA09 /* MIT-LICENSE in Resources */,
+				4DA197541631A632002FDA09 /* ReadMe in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,11 +364,13 @@
 				4DA197021631882D002FDA09 /* main.m in Sources */,
 				4DA197061631882D002FDA09 /* AppDelegate.m in Sources */,
 				4DA1970C1631882D002FDA09 /* ViewController.m in Sources */,
-				4DA1972D163188C0002FDA09 /* Network.m in Sources */,
 				4DA19730163188E4002FDA09 /* NetworkUtil.m in Sources */,
 				4DA1973316318A45002FDA09 /* Base64Util.m in Sources */,
-				4DA1973D16318C83002FDA09 /* SFHFKeychainUtils.m in Sources */,
 				4DA1973E16318C83002FDA09 /* UserSettingUtil.m in Sources */,
+				4DA1974A163199F3002FDA09 /* R9AppDelegate.m in Sources */,
+				4DA1974B163199F3002FDA09 /* R9HTTPRequest.m in Sources */,
+				4DA1974C163199F3002FDA09 /* SFHFKeychainUtils.m in Sources */,
+				4DA197581631AEFA002FDA09 /* NSString+Validate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
