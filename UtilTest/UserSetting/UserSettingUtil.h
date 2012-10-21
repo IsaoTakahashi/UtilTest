@@ -27,10 +27,10 @@
 + (NSObject*) getObjectWithKey:(NSString*)key;
 + (void) setObjectWithKey:(NSString*)key object:(NSObject*)object;
 /*! ユーザ名の取得 */
-+ (NSString*) getUserName:(NSString*)serviceName;
++ (NSString*) getUserNameWithService:(NSString*)serviceName;
 + (void) setUserName:(NSString*)userName service:(NSString*)serviceName;
 /*! ユーザパスワードの取得 */
-+ (NSString*) getUserPassword:(NSString*)serviceName;
++ (NSString*) getUserPasswordWithService:(NSString*)serviceName;
 + (NSError*) setUserPassword:(NSString*)password service:(NSString*)serviceName;
 
 @end

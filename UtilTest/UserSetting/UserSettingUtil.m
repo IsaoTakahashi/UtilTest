@@ -45,7 +45,7 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-+ (NSString*) getUserName:(NSString*)serviceName
++ (NSString*) getUserNameWithService:(NSString*)serviceName
 {
     return [[NSUserDefaults standardUserDefaults] stringForKey:[NSString stringWithFormat:@"%@_USERNAME",serviceName]];
 }
@@ -54,7 +54,7 @@
 {
     //delete password for old user name
     NSError *error;
-    NSString *oldUserName = [UserSettingUtil getUserName:serviceName];
+    NSString *oldUserName = [UserSettingUtil getUserNameWithService:serviceName];
     if(oldUserName != nil && ![oldUserName isEqualToString:userName]) {
         [SFHFKeychainUtils deleteItemForUsername:oldUserName andServiceName:serviceName error:&error];
     }
@@ -62,9 +62,9 @@
     [UserSettingUtil setStringWithKey:[NSString stringWithFormat:@"%@_USERNAME",serviceName] value:userName];
 }
 
-+ (NSString*) getUserPassword:(NSString*)serviceName
++ (NSString*) getUserPasswordWithService:(NSString*)serviceName
 {
-    NSString* userName = [UserSettingUtil getUserName:serviceName];
+    NSString* userName = [UserSettingUtil getUserNameWithService:serviceName];
     if(userName == nil) {
         return nil;
     }
@@ -75,7 +75,7 @@
 
 + (NSError*) setUserPassword:(NSString*)password service:(NSString*)serviceName
 {
-    NSString* userName = [UserSettingUtil getUserName:serviceName];
+    NSString* userName = [UserSettingUtil getUserNameWithService:serviceName];
     if([userName isEmpty]) {
         return nil;
     }
@@ -89,7 +89,7 @@
 - (NSError*) deleteUserPassword:(NSString *)serviceName
 {
     NSError *error;
-    [SFHFKeychainUtils deleteItemForUsername:[UserSettingUtil getUserName:serviceName] andServiceName:serviceName error:&error];
+    [SFHFKeychainUtils deleteItemForUsername:[UserSettingUtil getUserNameWithService:serviceName] andServiceName:serviceName error:&error];
     return error;
 }
 

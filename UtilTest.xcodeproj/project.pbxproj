@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DA193E416341BC400325372 /* FileIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA193E316341BC400325372 /* FileIO.m */; };
 		4DA196F61631882D002FDA09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA196F51631882D002FDA09 /* UIKit.framework */; };
 		4DA196F81631882D002FDA09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA196F71631882D002FDA09 /* Foundation.framework */; };
 		4DA196FA1631882D002FDA09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA196F91631882D002FDA09 /* CoreGraphics.framework */; };
@@ -20,7 +21,7 @@
 		4DA197161631882D002FDA09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA196F71631882D002FDA09 /* Foundation.framework */; };
 		4DA1971E1631882D002FDA09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DA1971C1631882D002FDA09 /* InfoPlist.strings */; };
 		4DA197211631882D002FDA09 /* UtilTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA197201631882D002FDA09 /* UtilTestTests.m */; };
-		4DA19730163188E4002FDA09 /* NetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1972F163188E4002FDA09 /* NetworkUtil.m */; };
+		4DA19730163188E4002FDA09 /* SimpleNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1972F163188E4002FDA09 /* SimpleNetwork.m */; };
 		4DA1973316318A45002FDA09 /* Base64Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1973216318A45002FDA09 /* Base64Util.m */; };
 		4DA1973E16318C83002FDA09 /* UserSettingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1973C16318C83002FDA09 /* UserSettingUtil.m */; };
 		4DA19749163199F3002FDA09 /* BSD-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4DA19741163199F3002FDA09 /* BSD-LICENSE */; };
@@ -32,6 +33,8 @@
 		4DA197521631A60C002FDA09 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA197511631A60C002FDA09 /* Security.framework */; };
 		4DA197541631A632002FDA09 /* ReadMe in Resources */ = {isa = PBXBuildFile; fileRef = 4DA197531631A632002FDA09 /* ReadMe */; };
 		4DA197581631AEFA002FDA09 /* NSString+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA197571631AEFA002FDA09 /* NSString+Validate.m */; };
+		4DA329541633B12F0011C80B /* UIImage+Edit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA329531633B12F0011C80B /* UIImage+Edit.m */; };
+		4DA329601633D00A0011C80B /* NetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3295F1633D00A0011C80B /* NetworkViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DA193E216341BC400325372 /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; };
+		4DA193E316341BC400325372 /* FileIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileIO.m; sourceTree = "<group>"; };
 		4DA196F11631882D002FDA09 /* UtilTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UtilTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA196F51631882D002FDA09 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4DA196F71631882D002FDA09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,8 +69,8 @@
 		4DA1971D1631882D002FDA09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4DA1971F1631882D002FDA09 /* UtilTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilTestTests.h; sourceTree = "<group>"; };
 		4DA197201631882D002FDA09 /* UtilTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UtilTestTests.m; sourceTree = "<group>"; };
-		4DA1972E163188E4002FDA09 /* NetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkUtil.h; sourceTree = "<group>"; };
-		4DA1972F163188E4002FDA09 /* NetworkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkUtil.m; sourceTree = "<group>"; };
+		4DA1972E163188E4002FDA09 /* SimpleNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleNetwork.h; sourceTree = "<group>"; };
+		4DA1972F163188E4002FDA09 /* SimpleNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleNetwork.m; sourceTree = "<group>"; };
 		4DA1973116318A45002FDA09 /* Base64Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Util.h; sourceTree = "<group>"; };
 		4DA1973216318A45002FDA09 /* Base64Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Util.m; sourceTree = "<group>"; };
 		4DA1973B16318C83002FDA09 /* UserSettingUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingUtil.h; sourceTree = "<group>"; };
@@ -83,6 +88,10 @@
 		4DA197531631A632002FDA09 /* ReadMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe; sourceTree = "<group>"; };
 		4DA197561631AEFA002FDA09 /* NSString+Validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validate.h"; sourceTree = "<group>"; };
 		4DA197571631AEFA002FDA09 /* NSString+Validate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validate.m"; sourceTree = "<group>"; };
+		4DA329521633B12F0011C80B /* UIImage+Edit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Edit.h"; sourceTree = "<group>"; };
+		4DA329531633B12F0011C80B /* UIImage+Edit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Edit.m"; sourceTree = "<group>"; };
+		4DA3295E1633D00A0011C80B /* NetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkViewController.h; path = ../NetworkViewController.h; sourceTree = "<group>"; };
+		4DA3295F1633D00A0011C80B /* NetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkViewController.m; path = ../NetworkViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +120,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DA193E116341BC400325372 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				4DA193E216341BC400325372 /* FileIO.h */,
+				4DA193E316341BC400325372 /* FileIO.m */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
 		4DA196E61631882D002FDA09 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +164,7 @@
 		4DA196FB1631882D002FDA09 /* UtilTest */ = {
 			isa = PBXGroup;
 			children = (
+				4DA193E116341BC400325372 /* File */,
 				4DA197551631AED3002FDA09 /* Category */,
 				4DA1973F163199F3002FDA09 /* Library */,
 				4DA1973816318C83002FDA09 /* UserSetting */,
@@ -155,6 +174,8 @@
 				4DA197071631882D002FDA09 /* MainStoryboard.storyboard */,
 				4DA1970A1631882D002FDA09 /* ViewController.h */,
 				4DA1970B1631882D002FDA09 /* ViewController.m */,
+				4DA3295E1633D00A0011C80B /* NetworkViewController.h */,
+				4DA3295F1633D00A0011C80B /* NetworkViewController.m */,
 				4DA196FC1631882D002FDA09 /* Supporting Files */,
 			);
 			path = UtilTest;
@@ -193,8 +214,8 @@
 		4DA1972A163188C0002FDA09 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				4DA1972E163188E4002FDA09 /* NetworkUtil.h */,
-				4DA1972F163188E4002FDA09 /* NetworkUtil.m */,
+				4DA1972E163188E4002FDA09 /* SimpleNetwork.h */,
+				4DA1972F163188E4002FDA09 /* SimpleNetwork.m */,
 				4DA1973116318A45002FDA09 /* Base64Util.h */,
 				4DA1973216318A45002FDA09 /* Base64Util.m */,
 			);
@@ -247,6 +268,8 @@
 			children = (
 				4DA197561631AEFA002FDA09 /* NSString+Validate.h */,
 				4DA197571631AEFA002FDA09 /* NSString+Validate.m */,
+				4DA329521633B12F0011C80B /* UIImage+Edit.h */,
+				4DA329531633B12F0011C80B /* UIImage+Edit.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -364,13 +387,16 @@
 				4DA197021631882D002FDA09 /* main.m in Sources */,
 				4DA197061631882D002FDA09 /* AppDelegate.m in Sources */,
 				4DA1970C1631882D002FDA09 /* ViewController.m in Sources */,
-				4DA19730163188E4002FDA09 /* NetworkUtil.m in Sources */,
+				4DA19730163188E4002FDA09 /* SimpleNetwork.m in Sources */,
 				4DA1973316318A45002FDA09 /* Base64Util.m in Sources */,
 				4DA1973E16318C83002FDA09 /* UserSettingUtil.m in Sources */,
 				4DA1974A163199F3002FDA09 /* R9AppDelegate.m in Sources */,
 				4DA1974B163199F3002FDA09 /* R9HTTPRequest.m in Sources */,
 				4DA1974C163199F3002FDA09 /* SFHFKeychainUtils.m in Sources */,
 				4DA197581631AEFA002FDA09 /* NSString+Validate.m in Sources */,
+				4DA329541633B12F0011C80B /* UIImage+Edit.m in Sources */,
+				4DA329601633D00A0011C80B /* NetworkViewController.m in Sources */,
+				4DA193E416341BC400325372 /* FileIO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +570,7 @@
 				4DA197261631882D002FDA09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DA197271631882D002FDA09 /* Build configuration list for PBXNativeTarget "UtilTestTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +579,7 @@
 				4DA197291631882D002FDA09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

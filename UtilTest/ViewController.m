@@ -23,12 +23,12 @@ static NSString* serviceName = @"test";
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    NSString* userName = [UserSettingUtil getUserName:serviceName];
+    NSString* userName = [UserSettingUtil getUserNameWithService:serviceName];
     if(userName != nil) {
         NSLog(@"load username from UserDefaults");
         userField.text = userName;
         
-        NSString* password = [UserSettingUtil getUserPassword:serviceName];
+        NSString* password = [UserSettingUtil getUserPasswordWithService:serviceName];
         if(password != nil) {
             NSLog(@"load password from Keychain");
             passField.text = password;
@@ -54,7 +54,7 @@ static NSString* serviceName = @"test";
 
 - (IBAction)inputUserName:(id)sender {
     [UserSettingUtil setUserName:((UITextField*)sender).text service:serviceName];
-    NSLog(@"set user name: %@",[UserSettingUtil getUserName:serviceName]);
+    NSLog(@"set user name: %@",[UserSettingUtil getUserNameWithService:serviceName]);
 }
 
 - (IBAction)inputPassword:(id)sender {
