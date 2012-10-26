@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DA193E416341BC400325372 /* FileIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA193E316341BC400325372 /* FileIO.m */; };
+		4D9C7363163A80180090A150 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9C7362163A80180090A150 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4D9C7366163A80590090A150 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 4D9C7365163A80590090A150 /* README */; };
+		4DA193E416341BC400325372 /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA193E316341BC400325372 /* FileUtil.m */; };
+		4DA193F11634234700325372 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA193E81634234700325372 /* FMDatabase.m */; };
+		4DA193F21634234700325372 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA193EA1634234700325372 /* FMDatabaseAdditions.m */; };
+		4DA193F31634234700325372 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA193EC1634234700325372 /* FMDatabasePool.m */; };
+		4DA193F41634234700325372 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA193EE1634234700325372 /* FMDatabaseQueue.m */; };
+		4DA193F51634234700325372 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA193F01634234700325372 /* FMResultSet.m */; };
 		4DA196F61631882D002FDA09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA196F51631882D002FDA09 /* UIKit.framework */; };
 		4DA196F81631882D002FDA09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA196F71631882D002FDA09 /* Foundation.framework */; };
 		4DA196FA1631882D002FDA09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA196F91631882D002FDA09 /* CoreGraphics.framework */; };
@@ -33,6 +40,10 @@
 		4DA197521631A60C002FDA09 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA197511631A60C002FDA09 /* Security.framework */; };
 		4DA197541631A632002FDA09 /* ReadMe in Resources */ = {isa = PBXBuildFile; fileRef = 4DA197531631A632002FDA09 /* ReadMe */; };
 		4DA197581631AEFA002FDA09 /* NSString+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA197571631AEFA002FDA09 /* NSString+Validate.m */; };
+		4DA253EF163588090049946F /* README in Resources */ = {isa = PBXBuildFile; fileRef = 4DA253EE163588090049946F /* README */; };
+		4DA253F1163588480049946F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA253F0163588480049946F /* libsqlite3.0.dylib */; };
+		4DA2F4BC1636CBA6007325ED /* SimpleDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA2F4BB1636CBA6007325ED /* SimpleDBManager.m */; };
+		4DA2F4C01636CDB8007325ED /* DataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA2F4BF1636CDB8007325ED /* DataTableViewController.m */; };
 		4DA329541633B12F0011C80B /* UIImage+Edit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA329531633B12F0011C80B /* UIImage+Edit.m */; };
 		4DA329601633D00A0011C80B /* NetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3295F1633D00A0011C80B /* NetworkViewController.m */; };
 /* End PBXBuildFile section */
@@ -48,8 +59,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4DA193E216341BC400325372 /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; };
-		4DA193E316341BC400325372 /* FileIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileIO.m; sourceTree = "<group>"; };
+		4D9C7361163A80180090A150 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		4D9C7362163A80180090A150 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		4D9C7365163A80590090A150 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		4DA193E216341BC400325372 /* FileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
+		4DA193E316341BC400325372 /* FileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
+		4DA193E71634234700325372 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		4DA193E81634234700325372 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		4DA193E91634234700325372 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		4DA193EA1634234700325372 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		4DA193EB1634234700325372 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		4DA193EC1634234700325372 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		4DA193ED1634234700325372 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		4DA193EE1634234700325372 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		4DA193EF1634234700325372 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		4DA193F01634234700325372 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		4DA196F11631882D002FDA09 /* UtilTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UtilTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA196F51631882D002FDA09 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4DA196F71631882D002FDA09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +112,12 @@
 		4DA197531631A632002FDA09 /* ReadMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe; sourceTree = "<group>"; };
 		4DA197561631AEFA002FDA09 /* NSString+Validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validate.h"; sourceTree = "<group>"; };
 		4DA197571631AEFA002FDA09 /* NSString+Validate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validate.m"; sourceTree = "<group>"; };
+		4DA253EE163588090049946F /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		4DA253F0163588480049946F /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		4DA2F4BA1636CBA5007325ED /* SimpleDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleDBManager.h; path = DB/SimpleDBManager.h; sourceTree = "<group>"; };
+		4DA2F4BB1636CBA6007325ED /* SimpleDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleDBManager.m; path = DB/SimpleDBManager.m; sourceTree = "<group>"; };
+		4DA2F4BE1636CDB8007325ED /* DataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTableViewController.h; sourceTree = "<group>"; };
+		4DA2F4BF1636CDB8007325ED /* DataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTableViewController.m; sourceTree = "<group>"; };
 		4DA329521633B12F0011C80B /* UIImage+Edit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Edit.h"; sourceTree = "<group>"; };
 		4DA329531633B12F0011C80B /* UIImage+Edit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Edit.m"; sourceTree = "<group>"; };
 		4DA3295E1633D00A0011C80B /* NetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkViewController.h; path = ../NetworkViewController.h; sourceTree = "<group>"; };
@@ -99,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA253F1163588480049946F /* libsqlite3.0.dylib in Frameworks */,
 				4DA197521631A60C002FDA09 /* Security.framework in Frameworks */,
 				4DA197501631A5DC002FDA09 /* SystemConfiguration.framework in Frameworks */,
 				4DA196F61631882D002FDA09 /* UIKit.framework in Frameworks */,
@@ -120,18 +151,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D9C7360163A80180090A150 /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				4D9C7361163A80180090A150 /* RegexKitLite.h */,
+				4D9C7362163A80180090A150 /* RegexKitLite.m */,
+				4D9C7365163A80590090A150 /* README */,
+			);
+			path = RegexKitLite;
+			sourceTree = "<group>";
+		};
 		4DA193E116341BC400325372 /* File */ = {
 			isa = PBXGroup;
 			children = (
-				4DA193E216341BC400325372 /* FileIO.h */,
-				4DA193E316341BC400325372 /* FileIO.m */,
+				4DA193E216341BC400325372 /* FileUtil.h */,
+				4DA193E316341BC400325372 /* FileUtil.m */,
 			);
 			path = File;
+			sourceTree = "<group>";
+		};
+		4DA193E61634234700325372 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				4DA193E71634234700325372 /* FMDatabase.h */,
+				4DA193E81634234700325372 /* FMDatabase.m */,
+				4DA193E91634234700325372 /* FMDatabaseAdditions.h */,
+				4DA193EA1634234700325372 /* FMDatabaseAdditions.m */,
+				4DA193EB1634234700325372 /* FMDatabasePool.h */,
+				4DA193EC1634234700325372 /* FMDatabasePool.m */,
+				4DA193ED1634234700325372 /* FMDatabaseQueue.h */,
+				4DA193EE1634234700325372 /* FMDatabaseQueue.m */,
+				4DA193EF1634234700325372 /* FMResultSet.h */,
+				4DA193F01634234700325372 /* FMResultSet.m */,
+				4DA253EE163588090049946F /* README */,
+			);
+			name = DB;
+			path = ../DB;
 			sourceTree = "<group>";
 		};
 		4DA196E61631882D002FDA09 = {
 			isa = PBXGroup;
 			children = (
+				4DA253F0163588480049946F /* libsqlite3.0.dylib */,
 				4DA197511631A60C002FDA09 /* Security.framework */,
 				4DA1974F1631A5DC002FDA09 /* SystemConfiguration.framework */,
 				4DA196FB1631882D002FDA09 /* UtilTest */,
@@ -164,18 +225,13 @@
 		4DA196FB1631882D002FDA09 /* UtilTest */ = {
 			isa = PBXGroup;
 			children = (
-				4DA193E116341BC400325372 /* File */,
+				4DA2F4C31636CE1D007325ED /* ViewController */,
+				4DA2F4C11636CDF1007325ED /* Util */,
 				4DA197551631AED3002FDA09 /* Category */,
 				4DA1973F163199F3002FDA09 /* Library */,
-				4DA1973816318C83002FDA09 /* UserSetting */,
-				4DA1972A163188C0002FDA09 /* Network */,
 				4DA197041631882D002FDA09 /* AppDelegate.h */,
 				4DA197051631882D002FDA09 /* AppDelegate.m */,
 				4DA197071631882D002FDA09 /* MainStoryboard.storyboard */,
-				4DA1970A1631882D002FDA09 /* ViewController.h */,
-				4DA1970B1631882D002FDA09 /* ViewController.m */,
-				4DA3295E1633D00A0011C80B /* NetworkViewController.h */,
-				4DA3295F1633D00A0011C80B /* NetworkViewController.m */,
 				4DA196FC1631882D002FDA09 /* Supporting Files */,
 			);
 			path = UtilTest;
@@ -234,6 +290,8 @@
 		4DA1973F163199F3002FDA09 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				4D9C7360163A80180090A150 /* RegexKitLite */,
+				4DA193E61634234700325372 /* DB */,
 				4DA19740163199F3002FDA09 /* R9HTTPRequest */,
 				4DA19746163199F3002FDA09 /* SFHFKeychainUtils */,
 			);
@@ -272,6 +330,39 @@
 				4DA329531633B12F0011C80B /* UIImage+Edit.m */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		4DA2F4C11636CDF1007325ED /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4DA2F4C21636CE0B007325ED /* DB */,
+				4DA1973816318C83002FDA09 /* UserSetting */,
+				4DA193E116341BC400325372 /* File */,
+				4DA1972A163188C0002FDA09 /* Network */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		4DA2F4C21636CE0B007325ED /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				4DA2F4BA1636CBA5007325ED /* SimpleDBManager.h */,
+				4DA2F4BB1636CBA6007325ED /* SimpleDBManager.m */,
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+		4DA2F4C31636CE1D007325ED /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4DA2F4BE1636CDB8007325ED /* DataTableViewController.h */,
+				4DA2F4BF1636CDB8007325ED /* DataTableViewController.m */,
+				4DA1970A1631882D002FDA09 /* ViewController.h */,
+				4DA1970B1631882D002FDA09 /* ViewController.m */,
+				4DA3295E1633D00A0011C80B /* NetworkViewController.h */,
+				4DA3295F1633D00A0011C80B /* NetworkViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +441,8 @@
 				4DA19749163199F3002FDA09 /* BSD-LICENSE in Resources */,
 				4DA1974E16319C54002FDA09 /* MIT-LICENSE in Resources */,
 				4DA197541631A632002FDA09 /* ReadMe in Resources */,
+				4DA253EF163588090049946F /* README in Resources */,
+				4D9C7366163A80590090A150 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,7 +489,15 @@
 				4DA197581631AEFA002FDA09 /* NSString+Validate.m in Sources */,
 				4DA329541633B12F0011C80B /* UIImage+Edit.m in Sources */,
 				4DA329601633D00A0011C80B /* NetworkViewController.m in Sources */,
-				4DA193E416341BC400325372 /* FileIO.m in Sources */,
+				4DA193E416341BC400325372 /* FileUtil.m in Sources */,
+				4DA193F11634234700325372 /* FMDatabase.m in Sources */,
+				4DA193F21634234700325372 /* FMDatabaseAdditions.m in Sources */,
+				4DA193F31634234700325372 /* FMDatabasePool.m in Sources */,
+				4DA193F41634234700325372 /* FMDatabaseQueue.m in Sources */,
+				4DA193F51634234700325372 /* FMResultSet.m in Sources */,
+				4DA2F4BC1636CBA6007325ED /* SimpleDBManager.m in Sources */,
+				4DA2F4C01636CDB8007325ED /* DataTableViewController.m in Sources */,
+				4D9C7363163A80180090A150 /* RegexKitLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,10 +599,13 @@
 		4DA197251631882D002FDA09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: ISAO TAKAHASHI (KY95JE6J2Q)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UtilTest/UtilTest-Prefix.pch";
 				INFOPLIST_FILE = "UtilTest/UtilTest-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-licucore";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "FDBB1436-22CA-4B68-91F4-EB28F910D14A";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -509,10 +613,13 @@
 		4DA197261631882D002FDA09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: ISAO TAKAHASHI (KY95JE6J2Q)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UtilTest/UtilTest-Prefix.pch";
 				INFOPLIST_FILE = "UtilTest/UtilTest-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-licucore";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "FDBB1436-22CA-4B68-91F4-EB28F910D14A";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

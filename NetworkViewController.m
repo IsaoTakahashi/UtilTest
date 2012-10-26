@@ -27,9 +27,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    SimpleNetwork* sn = [[SimpleNetwork alloc] init];
-    sn.delegate = self;
-    [sn sendGetRequest:[NSURL URLWithString:@"http://www.apple.com"] tag:@"google"];
+    
+    [FileUtil removeFile:@"text.txt" subDir:@"test"];
+    
+    if([FileUtil existsFile:@"text.txt" subDir:@"test"]) {
+        NSLog(@"%@",[FileUtil data2str:[FileUtil file2data:@"text.txt" subDir:@"test"]]);
+        NSLog(@"loaded from file");
+    } else {
+        SimpleNetwork* sn = [[SimpleNetwork alloc] init];
+        sn.delegate = self;
+        [sn sendGetRequest:[NSURL URLWithString:@"http://www.apple.com"] tag:@"google"];
+        NSLog(@"loaded from web");
+    } 
+    
 }
 
 - (void)viewDidUnload
@@ -48,6 +58,7 @@
 - (void) receiveResponseResult:(NSHTTPURLResponse *)responseHeader responseString:(NSString *)responseString tag:(NSString *)tag {
     NSLog(@"tag: %@",tag);
     NSLog(@"%@",responseString);
+    [FileUtil data2file:@"text.txt" subDir:@"test" data:[FileUtil str2data:responseString]];
 }
 
 @end

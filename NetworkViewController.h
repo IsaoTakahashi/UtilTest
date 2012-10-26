@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SimpleNetwork.h"
+#import "FileUtil.h"
 
 @interface NetworkViewController : UIViewController <SimpeNetworkDelegate>
 

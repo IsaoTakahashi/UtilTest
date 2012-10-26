@@ -1,0 +1,3 @@
+add "-licucore" to other link flag.
+
+And, this library's source is not ARC
